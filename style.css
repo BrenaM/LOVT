@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans:regular,italic);
+
+*{
+    box-sizing: border-box;   
+}
+
+body {
+    margin:  0;
+    padding: 0; 
+    font-family: 'Ropa Sans', sans-serif;
+    color: #777777;
+}
+
+.container {
+    width: 1200px; 
+    max-width: 100%;
+    margin: 0 auto; 
+    /* Como que muda o a altura das boxeeees */
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-box {
+    display: flex;
+    align-items: center; 
+    margin: 20px;  
+}
+
+header .logo {
+    width: auto;
+    height: auto;
+}
+
+header .slogan {
+    width: auto;
+    height: auto;
+}
+
+header .btn-menu button {
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header .btn-menu button:hover {
+    transition: 0.3s;
+    color: #DC9730;
+}
+
+/* configurando o slide principal */
+
+.banner .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner .slide {
+    width:100%;
+    height: 500px;
+    background-size:cover;
+    margin: 0 auto;
+
+}
+.banner .slide img {
+    width: 100%;
+}
+
+.banner .controls {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 15px;
+    
+}
+
+.banner .container .controls img {
+    
+    width: 20px;
+    background: rgba(141, 141, 141, 0.62);
+    
+    /* border-width: 50px; */
+    border-radius: 70px;
+    margin: 20px;
+    
+}
+
+/* Projetos */
+
+.projects .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.projects article {
+    width: 500px;
+    max-width: 100%;
+    /* min-height: 1000px; */
+    margin: 30px 0;
+    background-color: #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.projects article .thumb {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.projects article .thumb img {
+    width:100%;
+}
+
+.projects article .info {
+    padding: 20px;
+}
+
+.projects article .info .price {
+    font-size: 35px;
+}
+
+.projects article .info .tag {
+    color: #fff;
+    font-size: 25px;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 3px 10px;
+}
+
+.projects article .info .tag.tag-green {
+    background-color: #51D275;
+}
+
+.projects article .info .tag.tag-orange {
+    background-color: #DC9730;
+}
+
+/* configurando Style */
+.style h1 {
+    font-size: 25px;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #888888;
+}
+.style .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.style .container article{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);   
+}
+
+.style .container article img {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.style .container article h2 {
+    position: absolute;
+    font-size: 25px;
+    line-height: 27px;
+    color: #fff;
+}
+
+/* confirurando o rodape */
+footer {
+    background:#333333;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 50px 0px;
+}
+
+footer .container .map img {
+    width: 400px;
+    background-size: cover;
+}
+
+footer .container .info .company-info {
+
+    font-size: 12px;
+    line-height: 13px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
