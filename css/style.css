@@ -11,6 +11,16 @@ body {
     color: #777777;
 }
 
+.dark-mode,
+.dark-mode header {
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+.dark-mode section.projects article {
+    background-color: #949494;
+}
+
 .container {
     width: 1200px; 
     max-width: 100%;
@@ -26,7 +36,14 @@ body {
 
 header {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    /* podemos colocar o n/ maior para que essa posição seja maior nno codigo */
+    background-color: #fff;
 }
 
 header .container {
@@ -35,32 +52,43 @@ header .container {
     align-items: center;
 }
 
-header .logo-box {
+header .logo {
     display: flex;
     align-items: center; 
-    margin: 20px;  
+    /* margin: 20px;   */
 }
 
-header .logo {
-    width: auto;
-    height: auto;
+header .logo h1 {
+    font-size: 50px;
+    margin: 10px;
+    /* width: auto;
+    height: auto; */
 }
 
-header .slogan {
-    width: auto;
-    height: auto;
+header .slogan h2{
+    font-size: 18px;
+    font-weight: normal;
+    /* width: auto;
+    height: auto; */
 }
+
+/* header .btn-menu button.btn-toggle-mode {
+    font-size: 20px;
+    padding: 10px;
+} */
 
 header .btn-menu button {
     background-color: transparent;
     border: none;
-    margin-right: 10px;
+    font-size: 30px;
+    color: #777777;
+    outline: none;
     cursor: pointer;
 }
 
 header .btn-menu button:hover {
-    transition: 0.3s;
-    color: #DC9730;
+    transition: 0.5s;
+    color: #f5be08;
 }
 
 /* configurando o slide principal */
@@ -197,7 +225,11 @@ header .btn-menu button:hover {
 
 /* confirurando o rodape */
 footer {
+    /* width: 100%;
+    height: 15rem; */
     background:#333333;
+    /* margin-top: 3.5rem;
+    padding: 2.5rem 0; */
 }
 
 footer .container {
@@ -208,7 +240,8 @@ footer .container {
 }
 
 footer .container .map img {
-    width: 400px;
+    height: 10.1875rem;
+    /* width: 400px; */
     background-size: cover;
 }
 
@@ -216,7 +249,9 @@ footer .container .info .company-info {
 
     font-size: 12px;
     line-height: 13px;
-    text-align: justify;
+    text-align:center;
 
     color: #FFFFFF;
+ 
 }
+
