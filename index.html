@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
+    
     <header>
         <div class="container">
         <div class="logo">
@@ -26,6 +27,7 @@
         </div>
     </header>
     <main>
+       
         <section class="banner">
             <div class="container"> 
                 <div class="slide"><img src="img/Rectangle3.svg" alt="foto principal do site"></div>
@@ -92,6 +94,17 @@
                 </article>
             </div>
         </section>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form action="thanks.html">
+                    <input type="text" name="nome" id="input_nome" placeholder="Nome">
+                    <input type="email" name="email" id="input_email" placeholder="Email">
+                    <textarea name="mensagem" id="mensagems" cols="30" rows="10"></textarea>
+                    <button type="submit">enviar</button>
+                </form>
+            </div>
+        </section>
     </main>  
     <footer>
         <div class="container"> 
@@ -116,6 +129,22 @@
             </div> 
         </div>
     </footer>
+     <!-- Dark mode config  -->
+    <div class="modal"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                 Cadastre-se para receber nossa Newletter
+                <button class="close" onclick="btnClose()">X</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" name="Nome" placeholder="Digite seu nome">
+                    <input type="email" name="email" placeholder="Digite seu email">
+                    <button type="submit">enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="/js/main.js"></script>
 </body>
