@@ -97,11 +97,13 @@
         <section class="contact">
             <div class="container">
                 <h2>Contact</h2>
-                <form action="thanks.html">
+                <form id="form_contact" action="thanks.html">
                     <input type="text" name="nome" id="input_nome" placeholder="Nome">
-                    <input type="email" name="email" id="input_email" placeholder="Email">
-                    <textarea name="mensagem" id="mensagems" cols="30" rows="10"></textarea>
-                    <button type="submit">enviar</button>
+                    <input type="text" name="email" id="input_email" placeholder="Email">
+                    <input type="text" name="telefone" id="input_telefone" placeholder="telefone">
+                    <textarea name="mensagem" id="input_mensagem" cols="30" rows="10"></textarea>
+                    <div class="mensagem-erro"></div>
+                    <button type="submit" id="btn-submit-contact">enviar</button>
                 </form>
             </div>
         </section>
@@ -133,7 +135,7 @@
     <div class="modal"> 
         <div class="modal-content">
             <div class="modal-header">
-                 Cadastre-se para receber nossa Newletter
+                 <Strong>Cadastre-se para receber nossa Newletter</Strong>
                 <button class="close" onclick="btnClose()">X</button>
             </div>
             <div class="modal-body">
